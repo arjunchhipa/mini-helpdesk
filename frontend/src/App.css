@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 20px
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 20px
+}
+
+.card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06)
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form button {
+    padding: 10px 14px
+}
+
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.tickets-table th,
+.tickets-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #eee
+}
+
+.tickets-table tr.closed td {
+    opacity: 0.6
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    margin-bottom: 12px
+}
+
+.controls label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px
+}
