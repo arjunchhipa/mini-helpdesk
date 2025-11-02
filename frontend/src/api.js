@@ -1,4 +1,4 @@
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:5000/api';
+const API_BASE = process.env.REACT_APP_API_BASE || 'https://mini-helpdesk-backend-6iw3.onrender.com/api';
 
 export async function fetchTickets(params = {}){
   const qs = new URLSearchParams(params).toString();
@@ -25,4 +25,5 @@ export async function updateTicketStatus(id, status){
   });
   if (!res.ok) throw new Error('Failed to update status');
   return res.json();
+
 }
